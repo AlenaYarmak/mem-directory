@@ -1,0 +1,64 @@
+{
+    "memes": [
+        {
+            "id": "1",
+            "name": "Poltavskiy Paliy",
+            "image": "",
+            "likeCounter": "55"
+        },
+        {
+            "id": "2",
+            "name": "Poltavskiy Paliy",
+            "image": "",
+            "likeCounter": "35"
+        },
+        {
+            "id": "3",
+            "name": "Poltavskiy Paliy",
+            "image": "",
+            "likeCounter": "56"
+        },
+        {
+            "id": "4",
+            "name": "Poltavskiy Paliy",
+            "image": "",
+            "likeCounter": "77"
+        },
+        {
+            "id": "5",
+            "name": "Poltavskiy Paliy",
+            "image": "",
+            "likeCounter": "23"
+        },
+        {
+            "id": "6",
+            "name": "Poltavskiy Paliy",
+            "image": "",
+            "likeCounter": "43"
+        },
+        {
+            "id": "7",
+            "name": "Poltavskiy Paliy",
+            "image": "",
+            "likeCounter": "78"
+        },
+        {
+            "id": "8",
+            "name": "Poltavskiy Paliy",
+            "image": "",
+            "likeCounter": "29"
+        },
+        {
+            "id": "9",
+            "name": "Poltavskiy Paliy",
+            "image": "",
+            "likeCounter": "57"
+        },
+        {
+            "id": "10",
+            "name": "Poltavskiy Paliy",
+            "image": "",
+            "likeCounter": "98"
+        }
+    ]
+}
