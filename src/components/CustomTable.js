@@ -4,39 +4,26 @@ import {
     TableBody,
     TableColumn,
     TableRow,
-    TableCell
-} from "@heroui/table";
+    TableCell,
+    getKeyValue
+} from '@heroui/react';
 import data from '../data/memesMockData.json';
+import table from '../data/tableView.json';
 
 const CustomTable = () => {
     return (
         <Table aria-label='table'>
-            <TableHeader>
-                <TableColumn>NAME</TableColumn>
-                <TableColumn>ROLE</TableColumn>
-                <TableColumn>STATUS</TableColumn>
+            <TableHeader columns={table.columns}>
+                {(column) =>
+                    <TableColumn key={column.key}>{column.label}</TableColumn>
+                }
             </TableHeader>
-            <TableBody>
-                <TableRow key="1">
-                    <TableCell>Tony Reichert</TableCell>
-                    <TableCell>CEO</TableCell>
-                    <TableCell>Active</TableCell>
-                </TableRow>
-                <TableRow key="2">
-                    <TableCell>Zoey Lang</TableCell>
-                    <TableCell>Technical Lead</TableCell>
-                    <TableCell>Paused</TableCell>
-                </TableRow>
-                <TableRow key="3">
-                    <TableCell>Jane Fisher</TableCell>
-                    <TableCell>Senior Developer</TableCell>
-                    <TableCell>Active</TableCell>
-                </TableRow>
-                <TableRow key="4">
-                    <TableCell>William Howard</TableCell>
-                    <TableCell>Community Manager</TableCell>
-                    <TableCell>Vacation</TableCell>
-                </TableRow>
+            <TableBody items={data.memes}>
+                {(item) => (
+                    <TableRow key={item.key}>
+                        {(columnKey) => <TableCell>{getKeyValue(item, columnKey)}</TableCell>}
+                    </TableRow>
+                )}
             </TableBody>
         </Table>
     )
