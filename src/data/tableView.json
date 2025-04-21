@@ -17,8 +17,8 @@
             "label": "LIKE COUNTER"
         },
         {
-            "key": "actions",
-            "label": "ACTIONS"
+            "key": "action",
+            "label": "ACTION"
         }
     ]
 }
