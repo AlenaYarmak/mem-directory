@@ -4,3 +4,7 @@
     grid-column-gap: 16px;
     grid-row-gap: 16px;  
 }
+
+.center-navbar {
+    justify-content: center;
+}

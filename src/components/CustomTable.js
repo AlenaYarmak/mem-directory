@@ -100,7 +100,7 @@ const CustomTable = () => {
   },[handleEdit]);
 
   return (
-    <>
+    <div className='max-w-5xl p-2 mx-auto'>
       <Table aria-label='table'>
         <TableHeader columns={table.columns}>
           {(column) => (
@@ -161,7 +161,7 @@ const CustomTable = () => {
           )}
         </ModalContent>
       </Modal>
-    </>
+    </div>
   );
 };
 

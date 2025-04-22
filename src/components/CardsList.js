@@ -25,23 +25,24 @@ const CardsList = () => {
     }
 
     return (
-            <div className='card__container'>
+            <div className='grid grid-cols-4 gap-4 max-w-5xl p-2 mx-auto' >
                 {memesData.memes.map((item, index) => (
                     <Card
                         key={index}
                         isPressable
                         shadow='sm'
                         onPress={() => console.log('item pressed')}
-                        className='w-full'
+                        className='py-4'
                     >
-                        <CardBody className='overflow-visible p-0'>
+                        <CardBody className='overflow-visible py-2'>
                             <Image
-                                className='w-full object-cover h-[140px]'
+                                className='object-cover rounded-xl'
+                                width={270}
                                 alt={item.name}
                                 src={`https://img.heroui.chat/image/ai?w=400&h=300&u=${index}`}
                             />
                         </CardBody>
-                        <CardFooter className='text-small justify-between'>
+                        <CardFooter className='text-small'>
                             <p className='text-default-500'>{item.name}</p>
                         </CardFooter>
                     </Card>

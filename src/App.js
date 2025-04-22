@@ -21,7 +21,7 @@ function App() {
         <div className='App'>
           <h1>Mem directory</h1>
           <Navbar>
-            <NavbarContent justify='center'>
+            <NavbarContent className='center-navbar'>
               <NavbarItem>
                 <Link as={RouterLink} to='/table'>Table</Link>
               </NavbarItem>
