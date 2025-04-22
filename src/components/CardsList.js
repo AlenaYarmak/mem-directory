@@ -1,4 +1,12 @@
-import { Card, CardHeader, CardBody, CardFooter, Divider, Link, Image } from '@heroui/react';
+import { 
+    Card, 
+    CardHeader, 
+    CardBody, 
+    CardFooter, 
+    Divider, 
+    Link, 
+    Image 
+} from '@heroui/react';
 
 const STORAGE_KEY = 'meme_data';
 
