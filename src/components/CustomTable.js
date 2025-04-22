@@ -148,6 +148,16 @@ const CustomTable = () => {
                   fullWidth
                   className='mb-4'
                 />
+                <Input
+                  isDisabled
+                  label='ID'
+                  name='id'
+                  type='number'
+                  value={editingItem?.id}
+                  onChange={handleInputChange}
+                  fullWidth
+                  className='mb-4'
+                />
               </ModalBody>
               <ModalFooter>
                 <Button color='danger' variant='light' onPress={() => handleClose(onClose)}>
