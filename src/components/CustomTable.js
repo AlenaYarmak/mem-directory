@@ -73,7 +73,6 @@ const CustomTable = () => {
   }, []);
 
   const handleSave = useCallback((onClose) => {
-    console.log(dataState);
       if (!editingItem) return;
 
       setDataState((prev) => ({
