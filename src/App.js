@@ -23,7 +23,7 @@ function App() {
           <Navbar>
             <NavbarContent className='center-navbar'>
               <NavbarItem>
-                <Link as={RouterLink} to='/table'>Table</Link>
+                <Link as={RouterLink} to='/'>Table</Link>
               </NavbarItem>
               <NavbarItem>
                 <Link as={RouterLink} to='/cards'>Cards</Link>
@@ -32,7 +32,7 @@ function App() {
           </Navbar>
 
           <Routes>
-            <Route path='/table' element={<TablePage />} />
+            <Route path='/' element={<TablePage />} />
             <Route path='/cards' element={<CardsPage />} />
           </Routes>
         </div>

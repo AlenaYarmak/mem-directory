@@ -34,16 +34,20 @@ const CardsList = () => {
                         onPress={() => console.log('item pressed')}
                         className='py-4'
                     >
-                        <CardBody className='overflow-visible py-2'>
+                        <CardBody className='overflow-visible flex flex-col justify-between'>
                             <Image
                                 className='object-cover rounded-xl pb-2'
                                 width={270}
+                                height={150}
                                 alt={item.name}
                                 src={item.url}
                             />
+
                             <p className='text-default-500 pb-1'>{item.name}</p>
                             <Divider />
                             <p className='text-default-500'>Likes - {item.likeCounter}</p>
+
+                            
                         </CardBody>
                         <CardFooter className='text-small'>
                             <Link 

@@ -2,62 +2,62 @@
     "memes": [
         {
             "id": "1",
-            "name": "Poltavskiy Paliy",
-            "url": "https://api.s3.us2h.com/screenshots/poltavskiypaliy.png",
+            "name": "Полтавський палій",
+            "url": "https://api.s3.us2h.com/screenshots/paliy.png",
             "likeCounter": "55"
         },
         {
             "id": "2",
-            "name": "Poltavskiy Paliy",
-            "url": "https://api.s3.us2h.com/screenshots/poltavskiypaliy.png",
+            "name": "Я теж хочу шоколадку",
+            "url": "https://api.s3.us2h.com/screenshots/shokoladky.png",
             "likeCounter": "35"
         },
         {
             "id": "3",
-            "name": "Poltavskiy Paliy",
-            "url": "https://api.s3.us2h.com/screenshots/poltavskiypaliy.png",
+            "name": "Штани за 40 грн",
+            "url": "https://api.s3.us2h.com/screenshots/shtany.png",
             "likeCounter": "56"
         },
         {
             "id": "4",
-            "name": "Poltavskiy Paliy",
-            "url": "https://api.s3.us2h.com/screenshots/poltavskiypaliy.png",
+            "name": "Мені сдається що Бог мене за шось наказує",
+            "url": "https://api.s3.us2h.com/screenshots/bognakazue.jpg",
             "likeCounter": "77"
         },
         {
             "id": "5",
-            "name": "Poltavskiy Paliy",
-            "url": "https://api.s3.us2h.com/screenshots/poltavskiypaliy.png",
+            "name": "Ці руки нічого не крали",
+            "url": "https://api.s3.us2h.com/screenshots/ruki.jpg",
             "likeCounter": "23"
         },
         {
             "id": "6",
-            "name": "Poltavskiy Paliy",
-            "url": "https://api.s3.us2h.com/screenshots/poltavskiypaliy.png",
+            "name": "Я із богатої сім'ї",
+            "url": "https://api.s3.us2h.com/screenshots/yaizbogatoisemyi.jpg",
             "likeCounter": "43"
         },
         {
             "id": "7",
-            "name": "Poltavskiy Paliy",
-            "url": "https://api.s3.us2h.com/screenshots/poltavskiypaliy.png",
+            "name": "Миша, все фигня",
+            "url": "https://api.s3.us2h.com/screenshots/mishavsefignya.png",
             "likeCounter": "78"
         },
         {
             "id": "8",
-            "name": "Poltavskiy Paliy",
-            "url": "https://api.s3.us2h.com/screenshots/poltavskiypaliy.png",
+            "name": "Кофе пить будешь?",
+            "url": "https://api.s3.us2h.com/screenshots/kofe.png",
             "likeCounter": "29"
         },
         {
             "id": "9",
-            "name": "Poltavskiy Paliy",
-            "url": "https://api.s3.us2h.com/screenshots/poltavskiypaliy.png",
+            "name": "Господи допоможи!",
+            "url": "https://api.s3.us2h.com/screenshots/dopomoji.png",
             "likeCounter": "57"
         },
         {
             "id": "10",
-            "name": "Poltavskiy Paliy",
-            "url": "https://api.s3.us2h.com/screenshots/poltavskiypaliy.png",
+            "name": "На ноль умножу",
+            "url": "https://api.s3.us2h.com/screenshots/nanolumnozu.jpg",
             "likeCounter": "98"
         }
     ]
