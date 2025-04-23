@@ -82,18 +82,35 @@ const CustomTable = () => {
   }, []);
 
   const handleSave = useCallback((onClose) => {
-      if (!editingItem) return;
+    if (!editingItem) return;
 
-      setDataState((prev) => ({
-        ...prev,
-        memes: prev.memes.map((item) =>
-          item.id === editingItem.id ? { ...editingItem } : item
-        ),
-      }));
+    const { name, likeCounter, url } = editingItem;
 
-      setEditingItem(null);
-      onClose();
-    },
+    if (!name || name.length < 3 || name.length > 100) {
+      alert('Name must be between 3 and 100 characters.');
+      return;
+    }
+
+    if (isNaN(likeCounter) || likeCounter < 0 || likeCounter > 99) {
+      alert('Like Counter must be a number between 0 and 99.');
+      return;
+    }
+
+    if (url && !isUrl(url)) {
+      alert('Invalid URL.');
+      return;
+    }
+
+    setDataState((prev) => ({
+      ...prev,
+      memes: prev.memes.map((item) =>
+        item.id === editingItem.id ? { ...editingItem } : item
+      ),
+    }));
+
+    setEditingItem(null);
+    onClose();
+  },
     [editingItem]
   );
 
@@ -106,7 +123,7 @@ const CustomTable = () => {
       );
     }
     return getKeyValue(item, columnKey);
-  },[handleEdit]);
+  }, [handleEdit]);
 
   return (
     <div className='max-w-5xl py-4 mx-auto'>
@@ -128,7 +145,7 @@ const CustomTable = () => {
       </Table>
       <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
         <ModalContent>
-        {(onClose) => (
+          {(onClose) => (
             <>
               <ModalHeader className='flex flex-col gap-1'>Edit Meme</ModalHeader>
               <ModalBody>
