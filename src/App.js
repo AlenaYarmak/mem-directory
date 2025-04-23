@@ -1,3 +1,4 @@
+import React, { Suspense, lazy } from 'react';
 import { HeroUIProvider } from '@heroui/system';
 import {
   Navbar,
@@ -6,11 +7,12 @@ import {
   Link
 } from '@heroui/react';
 import { BrowserRouter, Routes, Route, Link as RouterLink } from 'react-router-dom';
-import TablePage from './views/Table';
-import CardsPage from './views/Cards';
 
 import './index.css';
 import './style.css';
+
+const TablePage = lazy(() => import('./views/Table'));
+const CardsPage = lazy(() => import('./views/Cards'));
 
 function App() {
   return (
@@ -29,10 +31,12 @@ function App() {
             </NavbarContent>
           </Navbar>
 
-          <Routes>
-            <Route path='/' element={<TablePage />} />
-            <Route path='/cards' element={<CardsPage />} />
-          </Routes>
+          <Suspense>
+            <Routes>
+              <Route path='/' element={<TablePage />} />
+              <Route path='/cards' element={<CardsPage />} />
+            </Routes>
+          </Suspense>
         </div>
       </BrowserRouter>
     </HeroUIProvider>
