@@ -6,8 +6,6 @@ import {
   Link
 } from '@heroui/react';
 import { BrowserRouter, Routes, Route, Link as RouterLink } from 'react-router-dom';
-import Table from './components/CustomTable';
-import CardsList from './components/CardsList';
 import TablePage from './views/Table';
 import CardsPage from './views/Cards';
 
