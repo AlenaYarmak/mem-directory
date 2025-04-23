@@ -36,14 +36,19 @@ const CardsList = () => {
                     >
                         <CardBody className='overflow-visible py-2'>
                             <Image
-                                className='object-cover rounded-xl'
+                                className='object-cover rounded-xl pb-2'
                                 width={270}
                                 alt={item.name}
-                                src={`https://img.heroui.chat/image/ai?w=400&h=300&u=${index}`}
+                                src={item.url}
                             />
+                            <p className='text-default-500 pb-1'>{item.name}</p>
+                            <Divider />
+                            <p className='text-default-500'>Likes - {item.likeCounter}</p>
                         </CardBody>
                         <CardFooter className='text-small'>
-                            <p className='text-default-500'>{item.name}</p>
+                            <Link 
+                                href={item.url}
+                                className='text-wrap'>Visit source</Link>
                         </CardFooter>
                     </Card>
                 ))}

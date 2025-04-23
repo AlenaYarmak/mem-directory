@@ -18,6 +18,7 @@ import {
 import { Button } from '@heroui/button';
 import data from '../data/memesMockData.json';
 import table from '../data/tableView.json';
+import isUrl from 'is-url';
 
 const STORAGE_KEY = 'meme_data';
 
@@ -56,6 +57,14 @@ const CustomTable = () => {
 
   const handleInputChange = useCallback((e) => {
     const { name, value } = e.target;
+
+    if (name === 'url') {
+      const validUrl = isUrl(value);
+      if (!validUrl) {
+        return;
+      }
+    }
+
     setEditingItem((prev) =>
       prev
         ? {
@@ -134,7 +143,7 @@ const CustomTable = () => {
                 <Input
                   label='URL'
                   name='url'
-                  value={editingItem?.url || ''}
+                  value={editingItem?.url}
                   onChange={handleInputChange}
                   fullWidth
                   className='mb-4'
@@ -143,7 +152,7 @@ const CustomTable = () => {
                   label='Like Counter'
                   name='likeCounter'
                   type='number'
-                  value={editingItem?.likeCounter || 0}
+                  value={editingItem?.likeCounter}
                   onChange={handleInputChange}
                   fullWidth
                   className='mb-4'
