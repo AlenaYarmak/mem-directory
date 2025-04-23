@@ -1,9 +1,28 @@
+:root {
+    --green: #3a7964;
+    --white: #FFF;
+    --dark-blur: #001428;
+}
+
 .container {
-    background-color: #001428;
+    background-color: var(--dark-blur);
     min-height: 100vh;  
 }
 
 .container h1 {
-    color: #2F6452;
+    color: var(--green);
     font-weight: 500;
+}
+
+.bg-color {
+    background-color: var(--dark-blur);
+}
+
+.text-color {
+    color: var(--green);
+}
+
+.button {
+    background-color: var(--green);
+    color: var(--white);
 }

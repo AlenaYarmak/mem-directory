@@ -51,7 +51,7 @@ const CardsList = () => {
                         <CardFooter className='text-small'>
                             <Link 
                                 href={item.url}
-                                className='text-wrap'>Visit source</Link>
+                                className='text-wrap text-color'>Visit source</Link>
                         </CardFooter>
                     </Card>
                 ))}

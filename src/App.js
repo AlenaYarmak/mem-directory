@@ -20,13 +20,19 @@ function App() {
       <BrowserRouter>
         <div className='container'>
           <h1 className='text-center text-2xl py-4'>Mem directory</h1>
-          <Navbar>
+          <Navbar className='bg-color'>
             <NavbarContent className='center-navbar'>
               <NavbarItem>
-                <Link as={RouterLink} to='/'>Table</Link>
+                <Link
+                  className='text-lg font-medium text-color'
+                  as={RouterLink} 
+                  to='/'>Table</Link>
               </NavbarItem>
               <NavbarItem>
-                <Link as={RouterLink} to='/cards'>Cards</Link>
+                <Link
+                  className='text-lg font-medium text-color'
+                  as={RouterLink} 
+                  to='/cards'>Cards</Link>
               </NavbarItem>
             </NavbarContent>
           </Navbar>

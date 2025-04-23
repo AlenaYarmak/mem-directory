@@ -100,7 +100,7 @@ const CustomTable = () => {
   const renderCell = useCallback((item, columnKey) => {
     if (columnKey === 'action') {
       return (
-        <Button size='sm' color='primary' onPress={() => handleEdit(item)}>
+        <Button className='button' size='sm' onPress={() => handleEdit(item)}>
           Edit
         </Button>
       );
