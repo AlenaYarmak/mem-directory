@@ -1,10 +1,9 @@
-.card__container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 16px;
-    grid-row-gap: 16px;  
+.container {
+    background-color: #001428;
+    min-height: 100vh;  
 }
 
-.center-navbar {
-    justify-content: center;
+.container h1 {
+    color: #2F6452;
+    font-weight: 500;
 }

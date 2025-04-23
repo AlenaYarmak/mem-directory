@@ -25,7 +25,7 @@ const CardsList = () => {
     }
 
     return (
-            <div className='grid grid-cols-4 gap-4 max-w-5xl p-2 mx-auto' >
+            <div className='grid grid-cols-4 gap-4 max-w-5xl py-4 mx-auto' >
                 {memesData.memes.map((item, index) => (
                     <Card
                         key={index}

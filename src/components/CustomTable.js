@@ -109,7 +109,7 @@ const CustomTable = () => {
   },[handleEdit]);
 
   return (
-    <div className='max-w-5xl p-2 mx-auto'>
+    <div className='max-w-5xl py-4 mx-auto'>
       <Table aria-label='table'>
         <TableHeader columns={table.columns}>
           {(column) => (

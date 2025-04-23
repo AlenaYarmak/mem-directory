@@ -18,8 +18,8 @@ function App() {
   return (
     <HeroUIProvider>
       <BrowserRouter>
-        <div className='App'>
-          <h1>Mem directory</h1>
+        <div className='container'>
+          <h1 className='text-center text-2xl py-4'>Mem directory</h1>
           <Navbar>
             <NavbarContent className='center-navbar'>
               <NavbarItem>
